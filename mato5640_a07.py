@@ -62,6 +62,7 @@ fig = px.choropleth(
 fig.update_layout(margin={"r":0,"t":50,"l":0,"b":0})
 
 app = dash.Dash(__name__)
+server = app.server
 app.title = "FIFA World Cup Dashboard"
 
 app.layout = html.Div([
